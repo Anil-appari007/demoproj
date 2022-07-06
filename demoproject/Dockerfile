@@ -17,5 +17,5 @@ WORKDIR /srv/www/demoproject
 RUN apt-get update
 COPY  --from=build-env /srv/www/demoproject/out  .
 
-
+EXPOSE 80
 ENTRYPOINT ["dotnet", "demoproject.dll"]

@@ -1,0 +1,5 @@
+services:
+  demo_site_dotnet:
+    image: demosite-dotnet
+    ports:
+      - 9000:80
